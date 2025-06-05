@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="interface/default.css">
+    <link rel="stylesheet" href="interface/inventory.css">
+    <link rel="stylesheet" href="gui/CardUI.css">
+    <link rel="stylesheet" href="gui/playerInfoUI.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-... (کد ادامه دارد)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="ui-container-top-right d-flex align-center">
+        <div class="beta-wrapper d-flex align-center">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Alpha Mode</span>
+        </div>
+        <div class="coin-wrapper d-flex align-center">
+            <i class="fa-solid fa-coins"></i>
+            <span class="coin-show-ui">Loading...</span>
+        </div>
+        <div class="credit-wrapper d-flex align-center">
+            <i class="fa-regular fa-credit-card"></i>
+            <span class="credit-show-ui">Loading...</span>
+        </div>
+        <div class="rank-system-ui d-flex align-center">
+            <div class="level-wrapper">
+                <span class="level-show-ui">Loading...</span>
+                <div class="tooltip">Loading...</div>
+            </div>
+            <div class="rank-name-wrapper d-flex align-center">
+                <span class="rank-name-show-ui">Loading...</span>
+                <img class="rank-logo" src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="inventory-container	">
+        <div class="inventory-summary d-flex">
+            <div class="total-value-box d-flex align-center justify-center"><span class="total-value-show">$0.00</span>
+            Total Value :</div>
+            <div class="inventory-info d-flex align-center">
+                <div class="total-items-count d-flex justify-center align-center"><span class="count">0</span>Items Have:</div>
+                <div class="sell-options d-flex align-center">
+                    <div class="fee-notice">
+                        Attention: If you want to sell your items, please note that a 10% fee will be applied to each item.
+                    </div>
+                    <div class="action-buttons d-flex">
+                        <button class="btn-sell-all d-flex align-center justify-center">
+                            <i class="fa-solid fa-money-bill"></i>
+                            sell Selected</button>
+                        <button class="btn-blackmarket d-flex align-center justify-center">
+                            <i class="fa-solid fa-store"></i>
+                            Blackmarket</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="inventory-controls d-flex">
+            <div class="top-toolbar d-flex align-center">
+                <div class="filter-controls d-flex">
+                    <button class="btn-sort-price d-flex align-center">Price Sort:<span>Default</span></button>
+                    <button class="btn-filter-quality d-flex align-center">Filter By:<span>Quality</span><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="search-and-select d-flex">
+                    <div class="search-bar d-flex align-center">
+                        <input class="input-search" type="text" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="select-all-wrapper d-flex">
+                        <div class="check-all-wrapper d-flex align-center">
+                            <div class="checkbox-custom checkbox-select-all">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Check All
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-card-grid">
+            </div>
+        </div>
+    </div>
+    <script  type="module" src="data/weapons.js"></script>
+    <script type="module" src="core/inventoryLoader.js"></script>
+    <script type="module" src="core/coinHandler.js"></script>
+    <script type="module" src="core/creditHandler.js"></script>
+    <script type="module" src="core/levelSystem.js"></script>
+    <script type="module" src="utils/rankDisplay.js"></script>
+    <script src="utils/sortSystem.js"></script>
+    <script type="module" src="core/searchHandler.js"></script>
+</body>
+</html>

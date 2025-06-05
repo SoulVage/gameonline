@@ -1,0 +1,161 @@
+.ui-container-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: -20px 20px;
+    gap: 10px;
+    height: 40px;
+}
+.credit-wrapper, .beta-wrapper, .coin-wrapper, .rank-system-ui span {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    cursor: pointer;
+}
+.credit-wrapper {
+    gap: 15px;
+    background-color: color-mix(in srgb, var(--primary-color) 10%, transparent 90%);
+    justify-content: space-between;
+    padding: 10px 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.test {
+    background-color: white;
+    padding: 10px;
+}
+.credit-wrapper i {
+    color: var(--primary-color);
+}
+.credit-show-ui {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+.beta-wrapper {
+    gap: 15px;
+    background-color: color-mix(in srgb, white 10%, transparent 90%);
+    justify-content: space-between;
+    padding: 11px 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.beta-wrapper i {
+    color: white;
+}
+.beta-wrapper span {
+    font-size: 13px;
+    color: white;
+}
+.coin-wrapper {
+    gap: 15px;
+    background-color: color-mix(in srgb, #fbb400 10%, transparent 90%);
+    justify-content: space-between;
+    padding: 11px 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.coin-wrapper i {
+    color: #fbb400;
+}
+.coin-wrapper span {
+    font-size: 14px;
+    color: #fbb400;
+}
+.coin-wrapper:hover {
+    background-color: color-mix(in srgb, #fbb400 20%, transparent 80%);
+}
+.beta-wrapper:hover {
+    background-color: color-mix(in srgb, white 20%, transparent 80%);
+}
+.credit-wrapper:hover {
+    background-color: color-mix(in srgb, var(--primary-color) 20%, transparent 80%);
+}
+.rank-system-ui {
+    height: 100%;
+    gap: 10px;
+}
+.rank-logo {
+    height: 17px;
+}
+.rank-system-ui .level-wrapper {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #14181c;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.rank-name-wrapper {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #14181c;
+    color: white;
+    gap: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.rank-system-ui .rank-name-wrapper:hover, .level-wrapper:hover {
+    background-color: color-mix(in srgb, #14181c 90%, white 10%);
+
+}
+.level-wrapper {
+    position: relative;
+}
+.level-wrapper:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #14181c;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    -webkit-transform: translateX(-50%) translateY(10px);
+    -moz-transform: translateX(-50%) translateY(10px);
+    -ms-transform: translateX(-50%) translateY(10px);
+    -o-transform: translateX(-50%) translateY(10px);
+    padding: 8px;
+    font-size: 13px;
+    top: 100%;
+    width: max-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #919191;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
