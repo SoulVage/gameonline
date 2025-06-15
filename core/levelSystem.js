@@ -21,7 +21,6 @@ export function updateLevel(amount) {
     
     levelWrapper.textContent = `Level ${level}`
     xpWrapper.textContent = `${currentXp} / ${needXp} XP`
-    xpWrapper2.textContent = `${currentXp} / ${needXp} XP`
     playerData.level = level
     playerData.xp = currentXp
     loadRank();
